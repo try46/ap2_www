@@ -15,10 +15,10 @@
         <h1>Kadai07_1.jsp</h1>
         <%
             for (int i = 50; i <= 100; i++) {
-                    if(i%7==0&&i%4!=0){
-                        out.println(i+"<br>");
-                    }
+                if (i % 7 == 0 && i % 4 != 0) {
+                    out.println(i + "<br>");
                 }
-            %>
+            }
+        %>
     </body>
 </html>
