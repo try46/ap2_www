@@ -51,7 +51,7 @@ Date date=new Date();
         <h1>Kadai07_4.jsp</h1>
         誕生日:1994年10月31日<br>
 
-        <%=getDate()%>現在で<%=getAge(1998, 11, 31) %>歳です
+        <%=getDate()%>現在で<%=getAge(1994, 10, 30) %>歳です
 
     </body>
 </html>
