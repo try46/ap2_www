@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>アンケート入力</h1>
+        <div>試食していただいた弊社商品についてアンケートにご協力ください。</div>
+        <form action="http://localhost:8084/ap2_www/en08/Kadai08_3.jsp" method="post">
+            <ul>
+                <li>名前<br>
+                    <input type="text" name="name">
+                </li>
+                <li>製品名<br>
+                    <select name="seihin">
+                        <option value="本マグロ中落ち缶~オレンジビールを添えて~">本マグロ中落ち缶~オレンジビールを添えて~
+                        <option value="特上シャモお刺身真空パック">特上シャモお刺身真空パック
+                        <option value="熟成本がつお節-贅沢まるごと一本">熟成本がつお節-贅沢まるごと一本
+                    </select>
+                </li>
+                <li>評価<br>
+                    <input type="radio" name="radio" value="良い">良い
+                    <input type="radio" name="radio" value="普通">普通
+                    <input type="radio" name="radio" value="悪い">悪い
+                </li>
+                <li>自由意見<br>
+                    <textarea name="textarea" cols="30" rows="3"></textarea>
+                </li>
+            </ul>
+            <p><input type="submit" value="送信"></p>
+        </form>
+    </body>
+</html>
