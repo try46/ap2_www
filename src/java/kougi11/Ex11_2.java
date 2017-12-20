@@ -14,6 +14,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -75,7 +76,7 @@ public class Ex11_2 extends HttpServlet {
 
             //ResultSetのclose
             rs.close();
-
+            /*
             //リストの内容を順番に出力
             for (Student s : slist) {
                 out.println("STUDENT_ID=" + s.getSID() + "<br>");
@@ -84,7 +85,10 @@ public class Ex11_2 extends HttpServlet {
                 out.println("GAKUBU_ID=" + s.getGakubu() + "<br>");
                 out.println("GRADE=" + s.getGrade() + "<hr>");
             }
-
+             */
+            request.setAttribute("slist", slist);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("Ex11_2.jsp");
+            dispatcher.forward(request, response);
         } catch (Exception e) {
             //サーブレット内での例外をアプリケーションのエラーとして表示
             throw new ServletException(e);

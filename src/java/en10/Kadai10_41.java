@@ -75,6 +75,7 @@ public class Kadai10_41 extends HttpServlet {
                 out.println("<p><a href=\"Kadai10_42\">該当IDのツイートを表示</a></p>");
             }else{
                 out.println("IDとパスワードが一致しません!"+"<br>");
+                out.println("<script> alert(バーカバーカ)</script>");
                  out.println("<p><a href=\"Kadai10_4.html\">ログインページに戻る</a></p>");
             }
             rs.close();
